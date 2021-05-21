@@ -7,8 +7,8 @@ from tensorflow.keras.models import load_model
 
 def classify_image(image_path):
 
-	prototxt = "face_detector/setting.prototxt"
-	caffeModel = "face_detector/res10.caffemodel"
+	prototxt = "setting.prototxt"
+	caffeModel = "res10.caffemodel"
 
 	# load input image
 	image = cv2.imread(image_path)
