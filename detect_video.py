@@ -44,8 +44,8 @@ def detect_and_predict_mask(win,face_net, mask_net):
   
 	return (locs, preds)
 
-proto = "face_detector/setting.prototxt"
-weights = "face_detector/res10.caffemodel"
+proto = "setting.prototxt"
+weights = "res10.caffemodel"
 
 face_net = cv2.dnn.readNet(proto, weights)
 
